@@ -8,12 +8,18 @@ output: html_document
 ```{r setup, include=FALSE}
 # Load libraries
 library(pdftools) #https://docs.ropensci.org/pdftools/
-#library(tesseract) #https://cran.r-project.org/web/packages/tesseract/vignettes/intro.html
+library(tesseract) #https://cran.r-project.org/web/packages/tesseract/vignettes/intro.html
 ```
 
 ```{r}
-pdf_text("./data/2021_PAM_600-3_ADA.pdf")
-pdf_ocr_text("./data/2021_PAM_600-3_ADA.pdf")
+pdf_text("/Users/joannaschroeder/Documents/R/dspg23ari/data/2021_PAM_600-3_ADA.pdf")
 ```
 
+```{r}
+pdf_ocr_text("/Users/joannaschroeder/Documents/R/dspg23ari/data/2021_PAM_600-3_ADA.pdf")
+```
+
+```{r}
+pdf_ocr_text("/Users/joannaschroeder/Documents/R/dspg23ari/data/2021_ADA_DevModel.pdf")
+```
 
