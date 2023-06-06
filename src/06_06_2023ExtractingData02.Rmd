@@ -10,6 +10,8 @@ library(pdftools)
 library(tesseract)
 library(stringr)
 library(rlist)
+library(dplyr)
+library(tidyverse)
 ```
 
 ```{r}
@@ -89,18 +91,74 @@ info[2]
 ```
 
 ```{r}
-#start paring down to assignments
+# tart paring down to assignments
 
-#empty character vector
+# empty character vector
 assignmentparagraphs <- character()
 
+#extract paragraphs
 for(i in info) {
   assignmentparagraphs <- str_extract_all(info, pattern = "(\\(2\\).*(?=\\(3\\)))|(\\(3\\).*(?=\\(4\\)))")
 }
 paragraphs <- unlist(assignmentparagraphs)
-
+paragraphs
 ```
 
+```{r}
+# make an empty data frame to store data
 
-what is the relationship between average household size and average home price
-relationship between average household age and home price
+# variable name
+columns <- c("MOS", "Rank", "Assignment", "Type", "Para")
+
+# data frame
+dataframe <- data.frame(matrix(nrow = 100, ncol = length(columns)))
+
+# assigning column names
+colnames(dataframe) <- columns
+```
+
+```{r}
+# hard coding the lieutenant data
+
+# grabbing dev. assignments
+LTassignments <- unlist(str_extract_all(paragraphs[2], pattern = "(?<=include\\h).*?(?=\\,)|(?<=\\,\\h).*?(?=\\,)|(?<=and\\h).*?(?=\\.)"))
+
+# cleaning up assignments
+forward <- LTassignments[-1]
+
+#input data
+dataframe$MOS <- MOS
+dataframe[c(1:5),2] <- ranks[1]
+dataframe[1,3] <- "Platoon Leader"
+dataframe[1,4] <- "KD"
+dataframe[1,5] <- 1
+dataframe[c(2:5),3] <- forward[1:4]
+dataframe[c(2:5),4] <- "Developmental and Broadening"
+dataframe[c(2:5),5] <- 2
+```
+
+```{r}
+# let's work with the rest of our data
+
+#wrangling
+paragraphs2 <- paragraphs[3:10]
+paragraphs3 <- paste(paragraphs2, collapse = " ")
+paragraphs4 <- unlist(str_split(paragraphs3, "\\(\\d\\)"))
+pasted <- paste(paragraphs4[5:12], collapse = " " )
+finalparagraphs <- c(paragraphs4[1:4],pasted,paragraphs4[13:16])
+finalparagraphs <- finalparagraphs[-1]
+finalparagraphs
+```
+
+```{r}
+# making a function to return assignments
+
+myfunction <- function(input){
+  vector <- unlist(str_extract_all(input, pattern = "(?<=\\(\\w\\)\\h).*?(?=\\h\\(\\w\\))"))
+  return(vector)
+  }
+mylist <- lapply(finalparagraphs,myfunction)
+mylist[[1]]
+mylist[[5]]
+```
+
