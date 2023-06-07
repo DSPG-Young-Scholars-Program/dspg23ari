@@ -62,7 +62,6 @@ str_extract_all(example, pattern1)
 str_extract_all(page4text, pattern = pattern1)
 ```
 
-
 ```{r}
 # moving to larger chunks
 
@@ -76,18 +75,6 @@ sections <- str_extract_all(fulltext, pattern = pattern1)
 
 # get it out of list
 info <- unlist(sections[[1]])
-```
-
-```{r}
-# extract rank
-
-# create empty vector
-ranks <- character()
-
-# for loop to add rank to vector
-for (i in info) {
-  ranks <- str_extract(info, pattern = "(?<=\\h[a-z]\\.\\h).*?(?=\\h)")
-}
 ```
 
 ```{r}
@@ -128,7 +115,7 @@ forward <- LTassignments[-1]
 
 #input data
 dataframe$MOS <- MOS
-dataframe[c(1:5),2] <- ranks[1]
+dataframe[c(1:5),2] <- "LT"
 dataframe[1,3] <- "Platoon Leader"
 dataframe[1,4] <- "KD"
 dataframe[1,5] <- 1
@@ -164,8 +151,6 @@ mylist <- lapply(finalparagraphs,myfunction)
 
 #clean it up
 mylist[[4]] <- c(mylist[[4]], pastesection)
-
-
 ```
 
 ```{r}
