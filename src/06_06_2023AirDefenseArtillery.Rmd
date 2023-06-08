@@ -1,5 +1,5 @@
 ---
-title: "06_06_2023_ExtractingData02"
+title: "06_06_2023AirDefenseArtillery"
 output: pdf_document
 date: "2023-06-06"
 ---
@@ -12,7 +12,6 @@ library(stringr)
 library(rlist)
 library(dplyr)
 library(tidyverse)
-library(schoolmath)
 ```
 
 ```{r}

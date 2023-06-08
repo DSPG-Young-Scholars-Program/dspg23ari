@@ -1,0 +1,36 @@
+---
+title: "08_06_2023Armor"
+output: pdf_document
+date: "2023-06-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(pdftools)
+library(tesseract)
+library(stringr)
+library(rlist)
+library(dplyr)
+library(tidyverse)
+```
+
+```{r}
+# extracting data
+data <- pdf_data("./data/armor-da-pam-600-3-a-2.pdf")
+
+# establishing MOS
+MOS <- "Armor"
+
+# we want pages 3-9
+
+pages3to9 <- list.rbind(data[3:9])
+pages3to9sep <- as.character(pages3to9$text)
+fulltext <- paste(pages3to9sep, collapse = " ")
+```
+
+```{r}
+# find all of our KD paragraphs
+KDs <- str_extract_all(fulltext, "(Key)(\\h)(developmental).*?(?=\\h[a-z]\\.\\h)|(KD).*?(?=\\h[a-z]\\.\\h)")
+KDs
+```
+
