@@ -150,6 +150,8 @@ mylist <- lapply(finalparagraphs,myfunction)
 
 #clean it up
 mylist[[4]] <- c(mylist[[4]], pastesection)
+
+mylist
 ```
 
 ```{r}
@@ -186,6 +188,7 @@ dataframe2 <- data.frame(matrix(nrow = 67, ncol = length(columns)))
 # assigning column names
 colnames(dataframe2) <- columns
 
+finallist <- unlist(mylist)
 # adding things in
 dataframe2$MOS <- MOS
 dataframe2$Assignment <- finallist
