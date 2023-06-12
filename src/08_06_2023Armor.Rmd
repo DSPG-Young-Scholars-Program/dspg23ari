@@ -26,6 +26,7 @@ MOS <- "Armor"
 pages3to9 <- list.rbind(data[3:9])
 pages3to9sep <- as.character(pages3to9$text)
 fulltext <- paste(pages3to9sep, collapse = " ")
+fulltext
 ```
 
 ```{r}
@@ -36,24 +37,16 @@ KDs <- unlist(str_extract_all(fulltext, "(Key)(\\h)(developmental).*?(?=(\\h[a-z
 
 KDs <- KDs[-4]
 KDs
-
-# find all of our broadening paragraphs
-
-DEVs <- unlist(str_extract_all(fulltext, "([Bb]roadening)(\\h)([Aa]ssignments).*?(?=\\h[a-z]\\.\\h)"))
-
-# clean
-DEVs <- DEVs[-c(1,3,4)]
-DEVs
 ```
 
 ```{r}
 # make a dataframe to start storing
 
 # variable name
-columns <- c("MOS", "Rank", "Assignment", "Type", "Para")
+columns <- c("MOS", "Rank", "Assignment", "Type")
 
 # data frame
-dataframe <- data.frame(matrix(nrow = 5, ncol = length(columns)))
+dataframe <- data.frame(matrix(nrow = 100, ncol = length(columns)))
 
 # assigning column names
 colnames(dataframe) <- columns
@@ -72,9 +65,58 @@ dataframe[2,c(2,3,4)] <- c("CAP", "Company/Troop Commander", "KD")
 dataframe[3,c(2,3,4)] <- c("CAP", "Staff Officer", "KD")
 
 # now that we've dealt with those...
-
+KDs
 KDsClean <- KDs[3:5]
 KDassignments <- unlist(str_extract_all(KDsClean, "\\(\\d\\).*?(?=(\\(\\d\\))|(Note)|(There))"))
-KDassignments
+KDassignmentsclean1 <- unlist(str_extract_all(KDassignments, "(?<=\\(\\d\\)\\h).*(?=\\h\\(SA)"))
+KDassignmentsclean <- unlist(str_extract_all(KDassignments, "(?<=\\(\\d\\)\\h).*(?=\\h$)"))
+KDassignmentsclean[3] <- KDassignmentsclean1[1]
+```
+
+```{r}
+#adding to dataframe
+
+dataframe$Assignment[4:14] <- KDassignmentsclean
+dataframe$Rank[4:8] <- "MAJ"
+dataframe$Rank[9:11] <- "LTC"
+dataframe$Rank[12:14] <- "COL"
+dataframe$Type[4:14] <- "KD"
+```
+
+```{r}
+# get broadening assignments
+broadeningparagraphs <- unlist(str_extract_all(fulltext, "[Bb]roadening\\h[Aa]ssignments.*?(?=Skills\\h(and)\\h(Attributes))"))
+
+# clean
+
+broadeningparagraphs <- broadeningparagraphs[-1]
+broadeningparagraphs[2] <- str_extract(broadeningparagraphs[2], "c\\.\\h(Broadening).*$")
+broadeningparagraphs
+broadeningparagraphs <- unlist(broadeningparagraphs)
+
+# note that the captain ones are not exactly the same as normal broadening because they have to be completed after KD is fulfilled
+
+# breaking down by numbers + letters
+broadeningassignments <- unlist(str_extract_all(broadeningparagraphs, "(?<=\\h\\(.{1,2}\\)\\h).*?(?=(\\h\\(.{1,2}\\)\\h)|$)"))
+
+# cleaning
+broadeningassignmentsclean1 <- str_remove_all(broadeningassignments, "(\\h(c)\\.\\h)|(\\h(d)\\.\\h)|(\\(.*\\))")
+broadeningassignmentsclean2 <- str_remove_all(broadeningassignmentsclean1, "(\\*.*$)|(6\\h.*$)")
+broadeningassignmentsclean <- str_remove_all(broadeningassignmentsclean2, "\\h$")
+broadeningassignmentsclean
+```
+
+```{r}
+# adding to data frame
+dataframe$Assignment[15:61] <- broadeningassignmentsclean
+dataframe$Type[15:61] <- "DEV"
+dataframe$Rank[15:28] <- "CAP"
+dataframe$Rank[29:42] <- "MAJ"
+dataframe$Rank[43:51] <- "LTC"
+dataframe$Rank[52:61] <- "COL"
+
+#final data
+
+fulldata <- dataframe[1:61,]
 ```
 
