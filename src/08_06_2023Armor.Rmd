@@ -118,5 +118,7 @@ dataframe$Rank[52:61] <- "COL"
 #final data
 
 fulldata <- dataframe[1:61,]
+
+write.csv(fulldata, "./data/14_06_2023_ArmorR.csv")
 ```
 

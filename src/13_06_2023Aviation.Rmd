@@ -134,5 +134,6 @@ dataframe$Type[44:(43+length(broadeningps2))] <- "DEV"
 dataframe$Rank[44:56] <- "LTC"
 dataframe$Rank[57:68] <- "COL"
 dataframe <- dataframe[1:67,]
+write.csv(dataframe, "./data/14_06_AviationR.csv")
 ```
 
