@@ -211,5 +211,6 @@ dataframe2$Rank <- case_when(
 # joining datasets
 joined <- rbind(dataframe, dataframe2)
 fulldata <- joined[,-5]
+write.csv(fulldata, "./data/15_06_2023_ADAR.csv")
 ```
 
