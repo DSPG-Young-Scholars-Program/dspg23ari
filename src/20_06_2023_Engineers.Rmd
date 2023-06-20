@@ -60,7 +60,6 @@ KDps[13] <- str_extract(KDps[13], "(second).*$")
 KDps[c(7,9:10,15:16,18)] <- paste(KDps[c(7,9:10,15:16,18)], "commands", sep = " ")
 KDps <- str_remove_all(KDps, "((?<=(battalion)|(brigade)(district))[s])|(\\h?(?=\\h))")
 KDps <- str_remove_all(KDps, "(?<=(command))[s]")
-length(KDps)
 ```
 
 ```{r}
