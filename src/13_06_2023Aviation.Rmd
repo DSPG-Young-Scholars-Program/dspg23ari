@@ -19,7 +19,6 @@ library(tidyverse)
 data <- pdf_data("./data/aviation-da-pam-600-3-a.pdf")
 
 # getting relevant pages
-
 pages <- list.rbind(data[3:8])
 pagessep <- as.character(pages$text)
 fulltext <- paste(pagessep, collapse = " ")
