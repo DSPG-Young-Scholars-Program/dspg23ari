@@ -135,6 +135,6 @@ dataframe$Rank[44:56] <- "LTC"
 dataframe$Rank[57:68] <- "COL"
 dataframe <- dataframe[1:67,]
 dataframe <- dataframe[-43]
-write.csv(dataframe, "./data/14_06_AviationR.csv")
+write.csv(dataframe, "./data/14_06_2023AviationR.csv")
 ```
 
