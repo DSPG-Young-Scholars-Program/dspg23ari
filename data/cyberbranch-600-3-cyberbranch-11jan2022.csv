@@ -1,0 +1,159 @@
+MOS,Rank,Assignments,Assignment Type
+Cyber Branch,Lieutenant,Analytic Support Officer,DEV
+Cyber Branch,Lieutenant,Interactive Operator (CMF),DEV
+Cyber Branch,Lieutenant,Cyber Planner,DEV
+Cyber Branch,Lieutenant,Company XO,DEV
+Cyber Branch,Lieutenant,Cyber/EW Planner,DEV
+Cyber Branch,Lieutenant,Section Leader,DEV
+Cyber Branch,Lieutenant,Platoon Leader,DEV
+Cyber Branch,Lieutenant,Exploitation Analyst (CMF)  Company XO,DEV
+Cyber Branch,Lieutenant,Aide d e Camp,DEV
+Cyber Branch,Lieutenant,Assistant S3,DEV
+Cyber Branch,Lieutenant,Brigade/Regiment  CEWO,DEV
+Cyber Branch,Lieutenant,Battle Captain,DEV
+Cyber Branch,Captain,Company Commander,KD
+Cyber Branch,Captain,Support Team Leader (CST),KD
+Cyber Branch,Captain,Mission Element Leader (CPT),KD
+Cyber Branch,Captain,Section Leader (NMT/CMT),KD
+Cyber Branch,Captain,Cyber Warfare/Ops Officer,KD
+Cyber Branch,Captain,Brigade/Regiment /SFG  CEWO,KD
+Cyber Branch,Captain,Development Crew Leader,KD
+Cyber Branch,Captain,Senior Developer,KD
+Cyber Branch,Captain,Effects Assessment Officer,DEV
+Cyber Branch,Captain,Battalion S2/S3 (CTB),DEV
+Cyber Branch,Captain,Watch Officer (JOC),DEV
+Cyber Branch,Captain,Instructor (CyS/USMA) (post -KD),DEV
+Cyber Branch,Captain,AROC Officer,DEV
+Cyber Branch,Captain,Evaluation Concepts Officer,DEV
+Cyber Branch,Captain,Career Program Mgr. (post -KD),DEV
+Cyber Branch,Captain,Product Engineer (915th CWB),DEV
+Cyber Branch,Captain,Battle Captain (JOC),DEV
+Cyber Branch,Captain,Branch Chief (OCO/DCO/DODIN),DEV
+Cyber Branch,Captain,CY Research  Scientist (post -KD),DEV
+Cyber Branch,Captain,Systems Development Chief,DEV
+Cyber Branch,Captain,Cyber OC/T (CTCs)  (post -KD),DEV
+Cyber Branch,Captain,Instructor (CyS /USMA)  (post -KD),DEV
+Cyber Branch,Captain,Career Program Mgr. (OCC)  (post -KD),DEV
+Cyber Branch,Captain,Mission Manager (JOC),DEV
+Cyber Branch,Captain,MDTF Company XO,DEV
+Cyber Branch,Captain,Remote Operations OIC,DEV
+Cyber Branch,Captain,Division/Corps CEWO,DEV
+Cyber Branch,Captain,Analytic Support Officer,DEV
+Cyber Branch,Captain,Assistant S3  (BN/BDE),DEV
+Cyber Branch,Captain,Battalion  S2/S3 (CTB),DEV
+Cyber Branch,Captain,Cyber Planner,DEV
+Cyber Branch,Captain,CY Research  Scientist (ACI) (post -KD),DEV
+Cyber Branch,Captain,Deputy Team Leader (ECT),DEV
+Cyber Branch,Captain,Special Technical Ops (STO) Planner,DEV
+Cyber Branch,Captain,CY/EW Rsrch. Scientist  (post -KD),DEV
+Cyber Branch,Captain,Instructor ( CyS/USMA)  (post -KD),DEV
+Cyber Branch,Captain,Task Force (TF) CuOps Officer (CMF),DEV
+Cyber Branch,Captain,Cyber/EW Planner,DEV
+Cyber Branch,Captain,Training/Exercises Officer,DEV
+Cyber Branch,Captain,Cyber/EW OC/T (CTCs) (post -KD),DEV
+Cyber Branch,Major,Battalion XO,KD
+Cyber Branch,Major,Development Team Leader  (915th),KD
+Cyber Branch,Major,Battalion S3,KD
+Cyber Branch,Major,Company  Commander ( MDTF ),KD
+Cyber Branch,Major,Mission Team Leader (CMT/ CPT/ ECT),KD
+Cyber Branch,Major,Support Team Leader (NS T),KD
+Cyber Branch,Major,Senior OC/T (CTCs),KD
+Cyber Branch,Major,Brigade/Regiment/SFG CEWO,KD
+Cyber Branch,Major,Master Developer,KD
+Cyber Branch,Major,TF Commander (CMF/CNMF),KD
+Cyber Branch,Major,Development  Section Lead er,KD
+Cyber Branch,Major,AROC Officer,DEV
+Cyber Branch,Major,CY/EW Rsrch. Scientist (post -KD),DEV
+Cyber Branch,Major,Assignments Officer (post -KD),DEV
+Cyber Branch,Major,Instructor ( CyS/USMA/CAC)  (post -KD),DEV
+Cyber Branch,Major,Cyber/EW Branch Chief,DEV
+Cyber Branch,Major,Cyber Branch Chief,DEV
+Cyber Branch,Major,Watch Officer (JOC),DEV
+Cyber Branch,Major,Strategy/Policy Planner (SOCOM),DEV
+Cyber Branch,Major,Cyber/EW Integrator (CCoE),DEV
+Cyber Branch,Major,TF Deputy Commander (CMF/CNMF),DEV
+Cyber Branch,Major,Instructor (post -KD),DEV
+Cyber Branch,Major,Cyber Mission Manager,DEV
+Cyber Branch,Major,Cyber/EW Planner,DEV
+Cyber Branch,Major,Battle Watch Chief (JOC),DEV
+Cyber Branch,Major,College Director ( CyS) (post -KD),DEV
+Cyber Branch,Major,Training/Exercises/Plans Officer,DEV
+Cyber Branch,Major,College Director (post -KD),DEV
+Cyber Branch,Major,College Director (CyS) (post -KD),DEV
+Cyber Branch,Major,Cyber Operations Chief (JFHQ -CY),DEV
+Cyber Branch,Major,CY Research Scientist (ACI)  (post -KD),DEV
+Cyber Branch,Major,"Chief, Capabilities Integr. (IWOC)",DEV
+Cyber Branch,Major,Cyber Planner,DEV
+Cyber Branch,Major,Course Manager (Cyber School),DEV
+Cyber Branch,Major,Senior Fires Officer (JOC),DEV
+Cyber Branch,Major,Joint Plans Analyst (JOC),DEV
+Cyber Branch,Major,Career Program Manager (post -KD),DEV
+Cyber Branch,Major,Cyber Integration Lead (JFHQ -CY),DEV
+Cyber Branch,Major,Division/Corps/EAC CEWO,DEV
+Cyber Branch,Major,BDE Assistant S3,DEV
+Cyber Branch,Major,Career Program Mgr. (post -KD),DEV
+Cyber Branch,Major,Cyber/EW OC/T (CTCs),DEV
+Cyber Branch,Major,Cyber Rsrch. Scientist (post -KD),DEV
+Cyber Branch,Major,Cyber OC/T (CTCs),DEV
+Cyber Branch,Lieutenant Colonel,Battalion Commander (CSL),KD
+Cyber Branch,Lieutenant Colonel,Development  Site Leader,KD
+Cyber Branch,Lieutenant Colonel,Task Force  Commander (CMF/CNMF),KD
+Cyber Branch,Lieutenant Colonel,Master Developer,KD
+Cyber Branch,Lieutenant Colonel,Mission Team Leader (NMT/CPT),KD
+Cyber Branch,Lieutenant Colonel,Division CEWO,KD
+Cyber Branch,Lieutenant Colonel,,DEV
+Cyber Branch,Lieutenant Colonel,Joint Cyberspace Analyst (JCS),DEV
+Cyber Branch,Lieutenant Colonel,Cyber Warfare Officer (ECB),DEV
+Cyber Branch,Lieutenant Colonel,Senior Watch Officer (IWOC),DEV
+Cyber Branch,Lieutenant Colonel,Technical Director (USCYBERCOM),DEV
+Cyber Branch,Lieutenant Colonel,CEMA Ops/Training (FORSCOM),DEV
+Cyber Branch,Lieutenant Colonel,ACM Capability Developer (CCoE),DEV
+Cyber Branch,Lieutenant Colonel,Senior/Lead Cyber Planner,DEV
+Cyber Branch,Lieutenant Colonel,"Chief, Capabilities Dev. (CCoE)",DEV
+Cyber Branch,Lieutenant Colonel,Instructor (CAC/USMA/USN),DEV
+Cyber Branch,Lieutenant Colonel,Chief Cyber Research (ACI),DEV
+Cyber Branch,Lieutenant Colonel,"Chief, Information Dominance (HRC)",DEV
+Cyber Branch,Lieutenant Colonel,"Chief, Info Dominance (HRC)",DEV
+Cyber Branch,Lieutenant Colonel,Tech Director (USCYBERCOM),DEV
+Cyber Branch,Lieutenant Colonel,Lead Army Analysis/Ops (JEWC),DEV
+Cyber Branch,Lieutenant Colonel,Deputy Director (OCC),DEV
+Cyber Branch,Lieutenant Colonel,Battle Captain (JFHQ -CY),DEV
+Cyber Branch,Lieutenant Colonel,BDE Deputy Command (post -CSL),DEV
+Cyber Branch,Lieutenant Colonel,Senior OC/T (CTCs),DEV
+Cyber Branch,Lieutenant Colonel,"Chief, ITOC (JFHQ -CY)",DEV
+Cyber Branch,Lieutenant Colonel,Training Integrator (CCoE),DEV
+Cyber Branch,Lieutenant Colonel,Corps/ASCC/CCMD CEWO,DEV
+Cyber Branch,Lieutenant Colonel,Cyber Branch/Division Chief,DEV
+Cyber Branch,Lieutenant Colonel,BDE S3,DEV
+Cyber Branch,Lieutenant Colonel,BDE Deputy Commander (post -CSL),DEV
+Cyber Branch,Lieutenant Colonel,Mission Director (USCYBERCOM),DEV
+Cyber Branch,Lieutenant Colonel,Assistant ACM Cyber/EW (CCoE),DEV
+Cyber Branch,Lieutenant Colonel,"Chief, CTOC (ARCYBER)",DEV
+Cyber Branch,Lieutenant Colonel,Senior Capabilities Analyst (IWOC),DEV
+Cyber Branch,Lieutenant Colonel,Chief Research Scientist (ACI),DEV
+Cyber Branch,Lieutenant Colonel,BDE Dep. Commander (post -CSL),DEV
+Cyber Branch,Lieutenant Colonel,Assistant ACM Cyber/EW,DEV
+Cyber Branch,Lieutenant Colonel,Senior Cyber OC/T (CTCs),DEV
+Cyber Branch,Lieutenant Colonel,J3 Branch Chief ( DISA),DEV
+Cyber Branch,Lieutenant Colonel,"Chief, Doctrine Branch (CCoE)",DEV
+Cyber Branch,Lieutenant Colonel,Senior Training Analyst (W1YYAA),DEV
+Cyber Branch,Colonel,Brigade Commander (CSL),KD
+Cyber Branch,Colonel,ACM Cyber/EW (CSL),KD
+Cyber Branch,Colonel,Corps CEWO (CSL),KD
+Cyber Branch,Colonel,BDE Cap. Development Leader,KD
+Cyber Branch,Colonel,Master Developer,KD
+Cyber Branch,Colonel,CEMA Division Chief,DEV
+Cyber Branch,Colonel,"Director, G33 (IWOC)",DEV
+Cyber Branch,Colonel,Asst. Commandant ( CyS) (post -CSL),DEV
+Cyber Branch,Colonel,Operations Chief (JFHQ -CY),DEV
+Cyber Branch,Colonel,"Director, ACI",DEV
+Cyber Branch,Colonel,Chief of Staff (post -CSL),DEV
+Cyber Branch,Colonel,"Director, Army Cyber Institute",DEV
+Cyber Branch,Colonel,Division Chief (DCS G3/5/7),DEV
+Cyber Branch,Colonel,Chief of Staff  (post -CSL),DEV
+Cyber Branch,Colonel,"Chief, Joint Cyber Center (CCMD)",DEV
+Cyber Branch,Colonel,Cyber Outreach Officer (ACI),DEV
+Cyber Branch,Colonel,"Director, IPE (CCMD)",DEV
+Cyber Branch,Colonel,ASCC/CCMD CEWO,DEV
+Cyber Branch,Colonel,Operations Chief (JFHQ -CY)   Asst. CMDT  (CyS) (post -CSL),DEV
+Cyber Branch,Colonel,Asst. CMDT (CyS) (post -CSL),DEV
