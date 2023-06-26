@@ -137,7 +137,7 @@ KDslist <- unlist(str_remove_all(KDslist, "(\\..*$)|(\\(.*\\))|(\\h\\(.$)"))
 KDslist[5] <- "ADAM Cell OIC Assignments"
 KDslist <- unlist(str_remove_all(KDslist, "\\h((of)|(or))\\h(?!(Staff)).*$"))
 KDslist[c(2,4,9,18)] <- c("HHB Commander", "Detatchment Commander", "AAMDC Fire Control Officer", "Air Defense Division Chief")
-v1 <- c(rep("CPT", 5), rep("MAJ", 5), rep("LTC", 6), rep("COL", 5))
+v1 <- c(rep("CAP", 5), rep("MAJ", 5), rep("LTC", 6), rep("COL", 5))
 
 #add to dataframe
 
@@ -146,7 +146,7 @@ dataframe[(6:(5+length(v1))), 2:4] <- c(v1, KDslist, rep("KD", length(v1)))
 
 ```{r}
 #devs
-v2 <- c(rep("CPT", 30), rep("MAJ", 17), rep("LTC", 9), rep("COL", 9))
+v2 <- c(rep("CAP", 30), rep("MAJ", 17), rep("LTC", 9), rep("COL", 9))
 
 DEVslist <- unlist(lapply(DEVps, myfunction))
 DEVslist <- DEVslist[-c(1,16:17,35:36,46:47,55)]
