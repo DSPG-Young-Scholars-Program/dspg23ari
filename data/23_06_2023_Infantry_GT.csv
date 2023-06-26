@@ -36,9 +36,9 @@ Infantry,CPT,army-sponsored fellowship,DEV
 Infantry,CPT,army-sponsored scholarship,DEV
 Infantry,CPT,combat arms generalist position,DEV
 Infantry,CPT,branch generalist position,DEV
-Infantry,CPT,broadening opportunity programs,DEV
-Infantry,CPT,jiim organizations,DEV
-Infantry,CPT,jiim commands,DEV
+Infantry,CPT,broadening opportunity program,DEV
+Infantry,CPT,jiim organization,DEV
+Infantry,CPT,jiim command,DEV
 Infantry,MAJ,battalion operations officer,KD
 Infantry,MAJ,battalion xo,KD
 Infantry,MAJ,brigade operations officer,KD
@@ -48,7 +48,7 @@ Infantry,MAJ,smu exo,KD
 Infantry,MAJ,mctp,DEV
 Infantry,MAJ,1st army,DEV
 Infantry,MAJ,ctc o/c-t,DEV
-Infantry,MAJ,ctc staff positions,DEV
+Infantry,MAJ,ctc staff position,DEV
 Infantry,MAJ,training developer,DEV
 Infantry,MAJ,doctrine developer,DEV
 Infantry,MAJ,sfab commander,DEV
@@ -91,8 +91,8 @@ Infantry,LTC,acom staff,DEV
 Infantry,LTC,hqda staff,DEV
 Infantry,LTC,divison ig,DEV
 Infantry,LTC,senior army advisor to the adjutant general,DEV
-Infantry,LTC,jiim organizations,DEV
-Infantry,LTC,jiim commands,DEV
+Infantry,LTC,jiim organization,DEV
+Infantry,LTC,jiim command,DEV
 Infantry,LTC,mctp staff,DEV
 Infantry,LTC,mctp o/c-t,DEV
 Infantry,COL,brigade command,KD

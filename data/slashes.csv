@@ -23,14 +23,14 @@ div/corps,"div, corps"
 hqda/office,"hqda, office"
 joint/ascc/hqda/acom/cocoms,"joint, ascc, hqda, acom, cocoms"
 observer/coach-trainer/staff,"o/c-t, staff"
-fellowship/scholarship,fellowship
+fellowship/scholarship,"fellowship, scholarship"
 o/c-t,o/c-t
 commander/chief,"commander, chief"
 g-3/5/7,g-3/5/7
 company/troop,company
 divarty/brigade/battalion,"brigade, battalion"
 observer/trainer,o/c-t
-scholarship/fellowship,fellowship
+scholarship/fellowship,"scholarship, fellowship"
 division/corps,"division, corps"
 ascc/macom,"ascc, macom"
 doctrine/training,doctrine
@@ -103,7 +103,7 @@ trainer/leader,trainer
 tank/mobile,"tank, mobile"
 system/scout,system scout
 aide-de-camp/nominative,"aide-de-camp, nominative"
-fellowships/scholarships,fellowship
+fellowships/scholarships,"fellowship, scholarship"
 brigade/division/corps/joint,"bridage, division, corps, joint"
 combat/training/doctrine,doctrine
 observer coach/trainer,o/c-t

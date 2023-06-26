@@ -13,6 +13,6 @@ matches <- as.data.frame(which(matrix >= threshold & matrix != 1, arr.ind = TRUE
 
 data <- table %>% tibble::rownames_to_column() %>% mutate(rowname = as.integer(rowname)) %>% left_join(matches, by = c("rowname" = "row"))
 data <- data %>% mutate(match = ifelse(!is.na(col), col, rowname)) %>% 
-  mutate(Assignment = Assignment[match]) %>% select(-col, -rowname, -match)
+  mutate(Assignment = Assignment[match]) %>% select(-col, -rowname, -match) %>% distinct()
 
 }
