@@ -34,3 +34,12 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 .DS_Store
+
+# R Environment Variables
+.Renviron
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
