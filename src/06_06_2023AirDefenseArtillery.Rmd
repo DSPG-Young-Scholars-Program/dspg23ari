@@ -130,13 +130,16 @@ myfunction <- function(input){
   vector <- unlist(str_split(input, pattern = "\\h\\(.\\)\\h"))
   return(vector)
 }
+
 # apply!
 KDslist <- unlist(lapply(KDps,myfunction))
+sample <- as.data.frame(KDslist)
 KDslist <- KDslist[-c(1,7,13,20)]
 KDslist <- unlist(str_remove_all(KDslist, "(\\..*$)|(\\(.*\\))|(\\h\\(.$)"))
 KDslist[5] <- "ADAM Cell OIC Assignments"
 KDslist <- unlist(str_remove_all(KDslist, "\\h((of)|(or))\\h(?!(Staff)).*$"))
 KDslist[c(2,4,9,18)] <- c("HHB Commander", "Detatchment Commander", "AAMDC Fire Control Officer", "Air Defense Division Chief")
+s2 <- as.data.frame(KDslist)
 v1 <- c(rep("CAP", 5), rep("MAJ", 5), rep("LTC", 6), rep("COL", 5))
 
 #add to dataframe

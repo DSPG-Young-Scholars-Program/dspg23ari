@@ -12,20 +12,20 @@ library(stringdist)
 ```
 
 ```{r}
-source("../functions/clean_assignments.R")
-source("../functions/match_strings.R")
+source("./functions/clean_assignments.R")
+source("./functions/match_strings.R")
 
-data <- clean_assignments(path_to_data = "../data")
+data <- clean_assignments(path_to_data = "./data")
 
 # 100% matching, we're not doing so hot
 regex <- data %>% filter(MOS == "Infantry") %>% mutate(join = 1) 
-gt <- read.csv("../data/23_06_2023_Infantry_GT.csv") 
+gt <- read.csv("./data/23_06_2023_Infantry_GT.csv") 
 gt %>% left_join(regex, by = c("Assignment", "Rank", "Type", "MOS")) %>% group_by(Rank, Type, MOS) %>% mutate(total = n(), join = ifelse(is.na(join), 0, join)) %>%
   mutate(perc = round((sum(join)/total)*100, 2)) %>% distinct(Rank, Type, total, perc)
 
 
 # fuzzymatching, does worse!
-gt <- read.csv("../data/23_06_2023_Infantry_GT.csv") %>% mutate(source = "gt")
+gt <- read.csv("./data/23_06_2023_Infantry_GT.csv") %>% mutate(source = "gt")
 big_table <- data %>% filter(MOS == "Infantry") %>% mutate(source = "regex") %>% rbind(gt)
 
 matches <- match_strings(big_table$Assignment, big_table, .9)
@@ -40,7 +40,7 @@ matches %>% filter(source == "gt") %>% select(-source) %>%
 # looser matching, we're doing okay!
 library(fuzzyjoin)
 regex <- data %>% filter(MOS == "Infantry") %>% mutate(Rank = ifelse(Rank == "CAP", "CPT", Rank))
-gt <- read.csv("../data/23_06_2023_Infantry_GT.csv") %>% 
+gt <- read.csv("./data/23_06_2023_Infantry_GT.csv") %>% 
   group_by(Rank, Type, MOS) %>% 
   mutate(gt_total = n())
 match1 <- fuzzy_inner_join(y = gt, x = regex, by = c("Rank","Type", "MOS", "Assignment"),
