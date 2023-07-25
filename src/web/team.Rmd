@@ -3,8 +3,11 @@ title: "Project Title"
 subtitle: "Team"
 ---
 
-# Mention yourselves
+# DSPG 23 TEAM
 
-# Mention the SDAD faculty
+## *Nakshatra Yalagach*         *Sara Shallenberger*
 
-# Mention your sponsors
+## *Joanna Schroeder*           *Joel Thurston*
+
+# Sponsors  
+## *Andrew Slaughter, US Army Research Institute for the Behavioral and Social Sciences.*
