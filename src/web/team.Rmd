@@ -1,10 +1,37 @@
 ---
 title: "Project Title"
-subtitle: "Team"
+subtitle: Team
+output:
+  html_document:
+    df_print: paged
 ---
 
-# Mention yourselves
+# DSPG 2023 Team
 
-# Mention the SDAD faculty
+## *Nakshatra Yalagach*
 
-# Mention your sponsors
+--Bio here--
+
+## *Sara Shallenberger*
+
+--bio here--
+
+# UVA Biocomplexity Institute Social and Decision Analytics Division Staff 
+
+## *Joanna Schroeder*
+## Intermediate Research Specialist
+
+<p align="justify">  
+![Joanna Schroeder](img/Joanna_pic.png){width=30% } 
+![Joel Thurston](img/Joel_pic.png){width=30% }  
+</p>
+
+## *Joel Thurston*
+## Senior Scientist
+
+
+# Project Sponser
+
+## *Andrew Slaughter, Army Research Institute for the Behavioral and Social Sciences*
+
+--bio of org--
