@@ -143,3 +143,8 @@ code span.sc{
 }
 
 
+/* COLUMNS */
+.column {
+    float: left;
+    width: 50%;
+}

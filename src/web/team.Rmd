@@ -18,16 +18,24 @@ output:
 
 # UVA Biocomplexity Institute Social and Decision Analytics Division Staff 
 
-## *Joanna Schroeder*
-## Intermediate Research Specialist
 
-<p align="justify">  
-![Joanna Schroeder](img/Joanna_pic.png){width=30% } 
-![Joel Thurston](img/Joel_pic.png){width=30% }  
+
+
+<div class="column">
+<h2>*Joanna Schroeder*</h2>
+<p style="text-align: center;">  
+![Joanna Schroeder](img/Joanna_pic.png){width=60%} 
+<h2>Intermediate Research Specialist</h2>
 </p>
-
-## *Joel Thurston*
-## Senior Scientist
+</div>
+    
+<div class="column">
+<h2>*Joel Thurston*</h2>
+<p style="text-align: center;">  
+![Joel Thurston](img/Joel_pic.png){width=60%}
+<h2>Senior Scientist</h2>
+</p>
+</div>
 
 
 # Project Sponser
