@@ -17,11 +17,7 @@ navbar:
     - text: "Methods"
       href: methods.html
     - text: "Findings"
-      menu:
-        - text: Overview
-          href: findings-overview.html
-        - text: Findings Rmd
-          href: findings-rmd.html
+      href: findings-overview.html 
     - text: "Team"
       href: team.html
     - text: ""
