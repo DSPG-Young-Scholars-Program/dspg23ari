@@ -4,7 +4,9 @@ subtitle: "ARI DSPG"
 ---
 
 # Project Summary
+This project aims to explore the prescriptive and descriptive behaviors associated with Soldier and unit performance, as well as related concepts like cohesion, teamwork, and leadership. Additionally, the research will focus on understanding the broad connection between performance and psychosocial characteristics.
 
+The ARI Team will leverage the project's results to gain deeper insights into the connection between performance behaviors and psychosocial traits. This understanding will enable more informed decision-making regarding key developmental positions and broadening assignments within the military. Moreover, the findings will be disseminated through open-source channels, contributing to the advancement of research in this domain and benefiting the wider scientific community.
 
 # Project Goals
 Our goal for the first phase of the project was to explore a variety of methodologies for extracting data from PDF files and begin exploratory analysis on this textual information. We plan to use tThe resulting data will be used in the following stages of our project, which will analyzes the career progression of soldiers across Army branches. As a by-product of our project, we will contribute information pertaining to Large Language Models (LLMs) to open source-repositories. 
