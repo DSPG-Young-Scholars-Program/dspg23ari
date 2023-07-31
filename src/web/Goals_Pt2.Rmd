@@ -1,6 +1,6 @@
 ---
-title: "Goals_Pt2"
-output: html_document
+title: "Analyzing Data From Documents"
+subtitle: "Goals"
 ---
 
 ```{r setup, include=FALSE}

@@ -1,4 +1,4 @@
 ---
-title: "Data_Pt1"
-output: html_document
+title: "Analyzing Data From Documents"
+subtitle: "Data"
 ---
