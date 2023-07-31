@@ -23,12 +23,21 @@ Our data source was documents from the *Smartbook for DA Pam 600-3 Officer Profe
 <div class="column">
 <p align="center" style= "margin-top: 50px;">
 *PAM DA 600-3: Information in Tabular Format*
-![PAM DA 600-3: Information in Tabular Format](img/DevelopmentTable.png){width=90%}
+![](img/DevelopmentTable.png)
 </p>
 </div>
 </div>
 
-<p align="center" style= "margin-top: 50px;">
+<br>
+<div align= "center">
+<p>  
 *PAM DA 600-3: Information in Flowchart*
-![PAM DA 600-3: Information in Flowchart](img/LifecycleDevelopment.png){width=60%}
 </p>
+</div>
+
+
+<div align="center">
+<p align="center;">
+<p>
+![PAM DA 600-3: Information in Flowchart](img/LifecycleDevelopment.png){width=60%}
+</div>
