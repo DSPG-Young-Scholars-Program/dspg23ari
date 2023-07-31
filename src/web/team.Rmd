@@ -29,12 +29,10 @@ output:
 <p style="text-align: center;">  
 ![Nakshatra Yalagach](img/nakshatra_pic.png){width=60%} 
 <h2>*Nakshatra Yalagach*</h2>
-<h2>Graduate Student Mentor</h2>
+<h2 style = "margin-bottom: 80px;">Graduate Student Mentor</h2>
 </p>
 </div>
 </div>
-
-
 
 <div align="center" style="margin-top: 40px;">
 <p> 

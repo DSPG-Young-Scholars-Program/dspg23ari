@@ -1,0 +1,12 @@
+---
+title: "Exploring Documents as Data"
+subtitle: "Data Sources"
+---
+<br>
+
+<div align="center">
+<p>  
+<h1> Part I: Assignment Extraction from the PAM-DA-300 </h1>
+</p>
+</div>
+

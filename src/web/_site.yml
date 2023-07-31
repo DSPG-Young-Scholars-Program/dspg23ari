@@ -12,12 +12,26 @@ navbar:
   right:
     - text: "Overview"
       href: index.html
-    - text: "Data"
-      href: data.html
-    - text: "Methods"
-      href: methods.html
-    - text: "Findings"
-      href: findings-overview.html 
+    - text: "Part 1: Extracting Text From Documents"
+      menu:
+       - text: Goals
+         href: Goals_Pt1.html
+       - text: Data
+         href: Data_Pt1.html 
+       - text: Methods
+         href: Methods_Pt1.html
+       - text: Findings
+         href: Findings_Pt1.html
+    - text: "Part 2: Analyzing Data From Documents"
+      menu:
+       - text: Goals
+         href: Goals_Pt2.html
+       - text: Data
+         href: Data_Pt2.html 
+       - text: Methods
+         href: Methods_Pt2.html
+       - text: Findings
+         href: Findings_Pt2.html
     - text: "Team"
       href: team.html
     - text: ""
