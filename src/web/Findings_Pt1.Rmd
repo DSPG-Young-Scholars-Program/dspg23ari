@@ -1,8 +1,32 @@
 ---
-title: "Project Title"
-subtitle: "Findings Overview"
+title: "Exploring Documents as Data"
+subtitle: "Exploratory Data Analysis"
 ---
 
-# Overview of findings
+```{r, echo = FALSE, message = FALSE}
+library(tidyr)
+library(dplyr)
+library(stringr)
+library(stringdist)
+library(DT)
 
-In the past students have used this page as a presentation aid
+source("../../functions/clean_assignments.R")
+source("../../functions/match_strings.R")
+
+data <- clean_assignments(path_to_data = "../../data")
+
+data %>% distinct(Assignment, Type) %>% group_by(Type) %>% summarise(count = n()) %>% 
+  datatable(caption = 'Table 1: This is a simple caption for the table.',
+    options = list(pageLength = 5, dom = 'tip'), rownames = FALSE)
+
+data %>% filter(Type == "KD") %>% distinct(Assignment, Type, MOS) %>% 
+  group_by(MOS) %>% summarise(count = n()) %>% 
+  datatable(caption = 'Table 1: This is a simple caption for the table.',
+    options = list(pageLength = 14, dom = 'tip'), rownames = FALSE)
+
+data %>% filter(Type == "KD") %>% distinct(Assignment, Rank) %>% 
+  group_by(Rank) %>% summarise(count = n()) %>% 
+  datatable(caption = 'Table 1: This is a simple caption for the table.',
+    options = list(pageLength = 10, dom = 'tip'), rownames = FALSE)
+```
+
