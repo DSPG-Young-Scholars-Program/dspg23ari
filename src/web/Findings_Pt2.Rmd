@@ -1,6 +1,6 @@
 ---
-title: "Findings_Pt2"
-output: html_document
+title: "Analyzing Data From Documents"
+subtitle: "Findings"
 ---
 
 ```{r setup, include=FALSE}
