@@ -12,7 +12,7 @@ navbar:
   right:
     - text: "Overview"
       href: index.html
-    - text: "Part 1: Extracting Text From Documents"
+    - text: "Extracting Text From Documents"
       menu:
        - text: Goals
          href: Goals_Pt1.html
@@ -22,7 +22,7 @@ navbar:
          href: Methods_Pt1.html
        - text: Findings
          href: Findings_Pt1.html
-    - text: "Part 2: Analyzing Data From Documents"
+    - text: "Analyzing Data From Documents"
       menu:
        - text: Goals
          href: Goals_Pt2.html
