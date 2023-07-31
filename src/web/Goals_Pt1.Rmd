@@ -13,5 +13,6 @@ The goal of the first part of the project was to use Army documents to create a 
 <div align="center">
 ![](img/SampleOutput.png) 
 </div>
+<br>
 
-To accomplish our goal of creating such a simple dataset, we had to explore a variety of methods for extracting data from a corpus of documents with inconsistent information presentation and formatting. Learn more about these documents by viewing our <a href=Data_Pt1.html>data source</a> page. 
+The task of creating a simple dataset from complex source material prompted us to explore a variety of methods for extracting data from a corpus of documents with inconsistent information presentation and formatting. Learn more about the documents and their challenges by viewing our <a href=Data_Pt1.html>data source</a> page. 

@@ -1,28 +1,34 @@
 ---
-title: "Methods_Pt1"
+title: "Part I: Methods"
 output: html_document
 ---
+<br>
+<br>
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<div align="center">
+<p>  
+<h2> Method I: Image Upscaling  </h2>
+</p>
+</div>
 
-## R Markdown
+We initally looked to the flowcharts in the PAM-DA-300 documents as a convenient source for our desired attributes. However, the charts were inserted into the document with an image format of low quality. So, we attempted to use image upscaling to make the information more readably by technology. However, image upscaling only increased the clarity of characters in large or bold font, and instead made the smaller-type assignments we were targeting less legible. "Before" and "after" images of a career progression chart that underwent upscaling are shown below:
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+<div>
+<div class="column">
+<p align="center" style= "margin-top: 25px; padding-right: 25px;">
+*Original Image*
+<br>
+![Original Image](img/OriginalChart.png) 
+</p>
+</div>
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+<div class="column">
+<p align="center" style= "margin-top: 25px; padding-left: 25px;">
+*Upscaled Image*
+<br>
+![Upscaled Image](img/UpscaledChart.png)
+</p>
+</div>
+</div>
 
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+<br>
