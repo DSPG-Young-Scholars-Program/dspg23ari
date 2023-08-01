@@ -16,10 +16,10 @@ output:
 <br>
 <br>
 
-<div>
+<div align="center">
 <div class="column">
 <p style="text-align: center;">  
-![Sara Shallenberger](img/sara_pic.png){width=60%} 
+![](img/sara_pic.png){width=60%} 
 <h2>*Sara Shallenberger*</h2>
 <h2>Undergraduate Intern</h2>
 </p>
@@ -27,7 +27,7 @@ output:
 
 <div class="column">
 <p style="text-align: center;">  
-![Nakshatra Yalagach](img/nakshatra_pic.png){width=60%} 
+![](img/nakshatra_pic.png){width=60%} 
 <h2>*Nakshatra Yalagach*</h2>
 <h2 style = "margin-bottom: 80px;">Graduate Student Mentor</h2>
 </p>
@@ -43,26 +43,31 @@ output:
 
 
 <br>
-
+<div align="center">
 <div class="column">
 <p style="text-align: center;">  
-![Joanna Schroeder](img/Joanna_pic.png){width=60%} 
+![](img/Joanna_pic.png){width=60%} 
 <h2>*Joanna Schroeder*</h2>
 <h2>Intermediate Research Specialist</h2>
 </p>
 </div>
-    
+
+
 <div class="column">
 <p style="text-align: center;">  
-![Joel Thurston](img/Joel_pic.png){width=60%}
+![](img/Joel_pic.png){width=60%}
 <h2>*Joel Thurston*</h2>
-<h2>Senior Scientist</h2>
+<h2 style = "margin-bottom: 80px;">Senior Scientist</h2>
 </p>
+</div>
+<br>
+<br>
+<br>
 </div>
 
 
+<div align = "center">
 # Project Sponser
 
 ## *Andrew Slaughter, Army Research Institute for the Behavioral and Social Sciences*
-
---bio of org--
+</div>
