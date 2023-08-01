@@ -2,27 +2,43 @@
 title: "Analyzing Data From Documents"
 subtitle: "Findings"
 ---
+Army Doctrine Publication serves as the baseline document. 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<div>
+<div class="column">
+<p align="center" style= "margin-top: 50px;">
+![Similarity Analysis using BERT](img/part2-bert.png){width=90%}
+*Similarity Analysis using BERT*
+</p>
+</div>
 
-## R Markdown
+<div class="column">
+<p align="center" style= "margin-top: 50px;">
+![Similarity Analysis using GPT](img/part2-gpt.png){width=90%} 
+*Similarity Analysis using GPT*
+</p>
+</div>
+</div>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+<div align= "center">
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+<p align="center" style= "margin-top: 50px;">
+![Similarity of GAT item*](img/part2-cosine.png){width=80%}
+Similarity of GAT doc to ADP
+</p>
+</div>
+<br>
+<br>
 
-```{r cars}
-summary(cars)
-```
+The results of the above survey is analyzed to determine the resilience in the five dimensions of
+strength, as well as your RealAge. Feedback on the three elements of the Performance Triad - Sleep, Activity, and Nutrition is also provided. This helps to determine the strengths and the areas to improve.   
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Below image describes a sample result of the the GAT survey.
+<div align= "center">
+<p align="center" style= "margin-top: 15px;">
+![Survey Analysis](img/part2-survey.png){width=100%}
+*Survey Analysis*
+</p>
+<br>
+<br>
+</div>

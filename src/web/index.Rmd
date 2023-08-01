@@ -3,24 +3,7 @@ title: "Exploring Documents as Data"
 subtitle: "ARI DSPG"
 ---
 
-# Project Summary
-This project aims to explore the prescriptive and descriptive behaviors associated with Soldier and unit performance, as well as related concepts like cohesion, teamwork, and leadership. Additionally, the research will focus on understanding the broad connection between performance and psychosocial characteristics.
 
-The ARI Team will leverage the project's results to gain deeper insights into the connection between performance behaviors and psychosocial traits. This understanding will enable more informed decision-making regarding key developmental positions and broadening assignments within the military. Moreover, the findings will be disseminated through open-source channels, contributing to the advancement of research in this domain and benefiting the wider scientific community.
-<br>
-
-
-# Project Goals
-The objective of the project are
-
-1. Identify prescriptive and descriptive behaviors linked to Soldier and unit performance, cohesion, teamwork, and leadership.
-2. Examine the overall connection between performance and psychosocial characteristics.
-3. Investigate the correlations between specific performance behaviors and psychosocial traits.
-4. Compare the output of two modeling strategies to identify areas of convergence and divergence in identifying performance-related behaviors and their connections to psychosocial traits.
-5. Contribute the project's findings to open-source materials for the benefit of the broader research community.
-<br>
-
-# Summary of Findings
 
 
 

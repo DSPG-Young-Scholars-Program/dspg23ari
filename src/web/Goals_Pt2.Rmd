@@ -3,26 +3,21 @@ title: "Analyzing Data From Documents"
 subtitle: "Goals"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Project Summary
+This project aims to explore the prescriptive and descriptive behaviors associated with Soldier and unit performance, as well as related concepts like cohesion, teamwork, and leadership. Additionally, the research will focus on understanding the broad connection between performance and psychosocial characteristics.
 
-## R Markdown
+The ARI Team will leverage the project's results to gain deeper insights into the connection between performance behaviors and psychosocial traits. This understanding will enable more informed decision-making regarding key developmental positions and broadening assignments within the military. Moreover, the findings will be disseminated through open-source channels, contributing to the advancement of research in this domain and benefiting the wider scientific community.
+<br>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+# Project Goals
+The objective of the project are
 
-```{r cars}
-summary(cars)
-```
+1. Identify prescriptive and descriptive behaviors linked to Soldier and unit performance, cohesion, teamwork, and leadership.
+2. Examine the overall connection between performance and psychosocial characteristics.
+3. Investigate the correlations between specific performance behaviors and psychosocial traits.
+4. Compare the output of two modeling strategies to identify areas of convergence and divergence in identifying performance-related behaviors and their connections to psychosocial traits.
+5. Contribute the project's findings to open-source materials for the benefit of the broader research community.
+<br>
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
