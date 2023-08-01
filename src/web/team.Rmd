@@ -37,7 +37,7 @@ output:
 <div align="center" style="margin-top: 40px;">
 <p> 
 <br>
-<h1> UVA Biocomplexity Institute Social and Decision Analytics Division Staff </h1>
+<h1> UVA Biocomplexity Institute <br> Social and Decision Analytics Division Staff </h1>
 </p>
 </div>
 
@@ -48,7 +48,7 @@ output:
 <p style="text-align: center;">  
 ![](img/Joanna_pic.png){width=60%} 
 <h2>*Joanna Schroeder*</h2>
-<h2>Intermediate Research Specialist</h2>
+<h2 style="text-align: center;">Intermediate Research Specialist</h2>
 </p>
 </div>
 

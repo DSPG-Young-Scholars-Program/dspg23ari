@@ -7,8 +7,22 @@ subtitle: "ARI DSPG"
 
 The DSPG Army Research Institute (ARI) project addressed two goals: First, to explore a variety of methodologies for extracting data from PDF files, and second, to explore prescriptive and descriptive behaviors associated with soldier and unit performance. The data derived in the first part of the project was provided to the ARI team to analyze soldier career progression across Army Branches. Insights from the second part of the project will enable more informed decision-making regarding position assignments within the Army.
 
+### Reserach Questions
+1. What positions/assignments are the same across branches and functional areas?
+2. What positions/assignments are unique to specific branches and functional areas?
+3. What behaviors and skills (if any) are associated with these positions/assignments?
+4. What prescriptive and descriptive behaviors are associated with Soldier and unit performance?
+5. How is performance connected to psychosocial characteristics?
+6. Can these performance findings be connected back to our dataset of key developmental positions and broadening assignments?
+
 ### Goals
+1. Explore methods to extract assignments from documents.
+2. Modeling Textual data.
+3. Analyze soldier career progression and their connections to psychosocial traits.
+4. Contribute to the documentation debt of Large Language models (LLM).
 
 
+### Disclosure
+The research described herein was sponsored by the U.S. Army Research Institute for the Behavioral and Social Sciences, Department of the Army (Cooperative Agreement No. W911NF-20-20-027). The views expressed in this presentation are those of the authors and do not reflect the official policy or position of the Department of the Army, DOD, or the U.S. Government.
 
 
