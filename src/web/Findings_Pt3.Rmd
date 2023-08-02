@@ -14,8 +14,6 @@ library(data.table)
 source("../../functions/clean_assignments.R")
 source("../../functions/match_strings.R")
 
-row <- c("Aviation", "KD", "LT", "platoon leader")
-
 data <- clean_assignments(path_to_data = "../../data") %>% mutate(Rank = ifelse(Rank == "CAP", "CPT", Rank)) %>% rowwise() %>% 
   mutate(Assignment = gsub("[()]", "", Assignment)) %>% 
   mutate(Assignment = str_remove(Assignment, "post -kd")) %>%
@@ -27,8 +25,7 @@ data <- clean_assignments(path_to_data = "../../data") %>% mutate(Rank = ifelse(
   mutate(Assignment = ifelse(Assignment %like% "brigadedivision mp planner", "brigade division mp planner", Assignment)) %>%
   mutate(Assignment = str_squish(str_remove(Assignment, "battallion"))) %>%
   mutate(Assignment = str_squish(Assignment)) %>% filter(!is.na(Assignment)) %>%
-  mutate(MOS = str_remove(MOS, " Branch|FA")) %>% rbind(row)
-  
+  mutate(MOS = str_remove(MOS, " Branch|FA"))
 
 data %>% datatable(caption = 'Table 1: This is a simple caption for the table.',
           extensions = "Buttons", filter = 'top',
@@ -39,8 +36,6 @@ data %>% datatable(caption = 'Table 1: This is a simple caption for the table.',
                            dom = 'Bfrtip',
                            buttons = c('copy', 'csv', 'excel'),
                            pageLength = 20))
-
-data %>% dplyrfilter(MOS == "Cyber") %>% summarise(count = n())
 ```
 
 ```{r, echo = FALSE, message = FALSE}
