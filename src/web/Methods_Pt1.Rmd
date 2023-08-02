@@ -1,6 +1,6 @@
 ---
-title: "Exploring Documents as Data"
-subtitle: "Extracting Text From Documents"
+title: "Extracting Text From Documents"
+subtitle: "Methods"
 ---
 
 Throughout the duration of this project, we have thoroughly examined a range of text extraction techniques. Moreover, we have provided comprehensive assessments of the advantages and disadvantages associated with each technique. By documenting these findings, we aim to facilitate future studies, enabling them to leverage the knowledge gained from our research. The advantages and disadvantages of each method can be assessed with the requirements of the project to enable the selection of the most suitable approach.  

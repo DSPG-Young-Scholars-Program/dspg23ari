@@ -20,7 +20,7 @@ navbar:
          href: Data_Pt1.html 
        - text: Methods
          href: Methods_Pt1.html
-       - text: Findings
+       - text: Insights
          href: Findings_Pt1.html
     - text: "Analyzing Data From Documents"
       menu:
@@ -30,7 +30,7 @@ navbar:
          href: Data_Pt2.html 
        - text: Methods
          href: Methods_Pt2.html
-       - text: Findings
+       - text: Insights
          href: Findings_Pt2.html
     - text: "Team"
       href: team.html

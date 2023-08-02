@@ -37,7 +37,8 @@ output:
 <div align="center" style="margin-top: 40px;">
 <p> 
 <br>
-<h1> UVA Biocomplexity Institute <br> Social and Decision Analytics Division Staff </h1>
+<h1> UVA Biocomplexity Institute</h1>
+<h3> Social and Decision Analytics Division Staff </h3>
 </p>
 </div>
 

@@ -12,6 +12,14 @@ subtitle: "Methods"
 Hugging face is an open source AI platform where we can create, build, and train models for open source collaboration. Hugging Face's Transformer library lets you connect to these models, send tasks, and receive outputs without having to set them up yourself. You can also download models, train them with your own data, or quickly create a Space. This makes it easy to find models to complete any kind of task, connect them with your own code, and start getting results. We have used the below two hugging face models. 
 
 1. <strong>BERT:</strong> Bidirectional Encoder Representations from Transformers is one of the extensively used hugging face model. Since this language model is bidirectionally trained, it can have a deeper sense of language context and flow than single-direction. BERT is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context. language models. 
+<div align= "center">
+
+<p align="center" style= "margin-top: 50px;">
+![Generating Sentence Embeddings Using BERT*](img/bert.png){width=80%}
+
+Similarity of GAT doc to ADP<br>
+</p>
+</div>
 
 2. <strong>GPT2:</strong> It is a transformer based language model designed to understand and generate human-like text by predicting the likelihood of words or sentences given the context provided to it. GPT-2 can perform various language-related tasks, such as generating coherent text, answering questions, completing sentences, and more. Its ability to generate contextually relevant responses has made it a powerful tool for natural language processing applications.
 

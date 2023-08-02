@@ -1,6 +1,6 @@
 ---
-title: "Exploring Documents as Data"
-subtitle: "Part I: Data Sources"
+title: "Extracting Text From Documents"
+subtitle: "Data Sources"
 ---
 <br>
 
