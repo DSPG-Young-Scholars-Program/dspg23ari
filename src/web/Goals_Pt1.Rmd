@@ -1,5 +1,6 @@
 ---
-title: "Part I: Goals"
+title: "Extracting Text From Documents"
+subtitle: "Goals"
 ---
 <br>
 <br>

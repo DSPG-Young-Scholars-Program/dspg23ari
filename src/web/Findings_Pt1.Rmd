@@ -1,6 +1,6 @@
 ---
-title: "Exploring Documents as Data"
-subtitle: "Exploratory Data Analysis"
+title: "Extracting Text From Documents"
+subtitle: "Insights"
 ---
 
 ```{r, echo = FALSE, message = FALSE}
