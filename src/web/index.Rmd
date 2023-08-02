@@ -7,7 +7,7 @@ subtitle: "ARI DSPG"
 
 The DSPG Army Research Institute (ARI) project addressed two goals: First, to explore a variety of methodologies for extracting data from PDF files, and second, to explore prescriptive and descriptive behaviors associated with soldier and unit performance. The data derived in the first part of the project was provided to the ARI team to analyze soldier career progression across Army Branches. Insights from the second part of the project will enable more informed decision-making regarding position assignments within the Army.
 
-### Reserach Questions
+### Research Questions
 1. What positions/assignments are the same across branches and functional areas?
 2. What positions/assignments are unique to specific branches and functional areas?
 3. What behaviors and skills (if any) are associated with these positions/assignments?
