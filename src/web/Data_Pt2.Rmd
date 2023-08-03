@@ -3,7 +3,8 @@ title: "Analyzing Data From Documents"
 subtitle: "Data"
 ---
 
-Our data source were the documents used for the *GAT Survey*. GAT (Global Assessment Tool) is a confidential, self-assessment tool through which you are able to confidentially assess your physical and psychological health based the five dimensions of strength: Social, Emotional, Spiritual, Family, and Physical.
+# Global Assessment Tool (GAT)
+Our data source were the documents used for the *GAT 2.0 Survey** (now called the Azimuth Check). GAT is a confidential, self-assessment tool through which you are able to confidentially assess your physical and psychological health based the five dimensions of strength: Social, Emotional, Spiritual, Family, and Physical.
 <br>
 <br>
 
@@ -37,3 +38,15 @@ Below image describes a sample result of the the GAT survey.
 <br>
 <br>
 </div>
+
+# Army Doctrine Publication (ADP) 6-22
+- ADP 6-22: Army Leadership and the Profession
+- Establishes the Army's concepts of leadership and performance
+  - Leadership is a universal quality for all Soldiers
+  - The ADP 6-22 "describes the attributes and core competencies required" of officers
+~130 pages
+
+# Joint Universal Task List
+- The Universal Joint Task List (UJTL) is the authoritative menu (or library) of all approved joint tasks required for planning, readiness reporting, training and exercises, lessons learned processing, and requirements.
+
+
