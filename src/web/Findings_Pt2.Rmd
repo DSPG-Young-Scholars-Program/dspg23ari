@@ -3,7 +3,7 @@ title: "Analyzing Data From Documents"
 subtitle: "Findings"
 ---
 Army Doctrine Publication serves as the baseline document. 
-
+The below analysis is conducted to determine the similarity between the good performer and bad performer GAT items. Most of the documents have a cosine similarity greater than 0.9 indicating high similarity. Since most of the words are common in the good performer and bad performer documents high similarity is obeserved.
 <div>
 <div class="column">
 <p align="center" style= "margin-top: 50px;">
@@ -11,6 +11,7 @@ Army Doctrine Publication serves as the baseline document.
 *Similarity Analysis using BERT*
 </p>
 </div>
+
 
 <div class="column">
 <p align="center" style= "margin-top: 50px;">
@@ -20,6 +21,7 @@ Army Doctrine Publication serves as the baseline document.
 </div>
 </div>
 
+The below analysis is conducted to determine the similarity between the GAT items and ADP. Most of the documents have a cosine similarity greater than 0.8 indicating high conceptual similarity between GAT items and ADP. The ADP not only specifies the characteristics of a good performer it also specifies the characteristics a good performer should not exhibit.Therefore even the bad performer documents have high conceptual similarity to the ADP. 
 <div align= "center">
 
 <p align="center" style= "margin-top: 50px;">
@@ -30,7 +32,7 @@ Similarity of GAT doc to ADP
 <br>
 <br>
 
-
+The below analysis is conducted to explore the prescriptive and descriptive behaviors associated with Soldier and unit performance.
 <br>
 <br>
 </div>
