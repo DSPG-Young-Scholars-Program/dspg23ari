@@ -12,8 +12,9 @@ The ARI Team will leverage the project's results to gain deeper insights into th
 
 # Project Goals
 1. Identify prescriptive and descriptive behaviors linked to Soldier and unit performance, cohesion, teamwork, and leadership.
-2. Investigate the correlations between specific performance behaviors and psychosocial traits.
+2. Investigate the correlations between psychosocial traits and Soldier performance.
 3. Compare the output of modeling strategies to identify areas of convergence and divergence in identifying performance-related behaviors and their connections to psychosocial traits.
+
 <br>
 <br>
 <br>

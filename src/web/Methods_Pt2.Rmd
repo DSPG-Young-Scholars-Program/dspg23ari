@@ -6,18 +6,21 @@ subtitle: "Methods"
 
 ### Data Representation
 
-<strong> Word Embeddings: </strong> To determine the similarity between the documents word embeddings was used.The word embedding techniques are used to represent words mathematically. Word Embeddings are a method of extracting features out of text so that we can input those features into a machine learning model to work with text data. They try to preserve syntactical and semantic information. It is an approach for representing words and documents. Word Embedding or Word Vector is a numeric vector input that represents a word in a lower-dimensional space. It allows words with similar meaning to have a similar representation. 
+<strong> Sentence Embeddings: </strong> Given that the data primarily comprises unstructured textual content, it becomes imperative to convert this data into a numerical format for effective comprehension by our models. As a result, we employ sentence embedding, a technique to extract features from text and feed them to machine learning models. They try to preserve syntactical and semantic information. Sentence Embedding or Sentence Vector is a numeric vector input that represents a word in a lower-dimensional space. It allows sentences with similar meaning to have a similar representation.
+
+
 
 ### Models
-Hugging face is an open source AI platform where we can create, build, and train models for open source collaboration. Hugging Face's Transformer library lets you connect to these models, send tasks, and receive outputs without having to set them up yourself. You can also download models, train them with your own data, or quickly create a Space. This makes it easy to find models to complete any kind of task, connect them with your own code, and start getting results. We have used the below two hugging face models. 
+To perform document similarity between the GAT items and ADP we have harnessed the capabilities of Hugging Face's pretrained models, which have proven to be invaluable in such tasks. The models use sentence embeddings for document similarity analysis. Hugging face is an open source AI platform to create, build, and train models for open source collaboration. It provides users with the flexibility to download the pretrained models for their specific needs. Users can then train these models with their own data, fine-tuning them to suit the task at hand. 
+
 
 1. <strong>BERT:</strong> Bidirectional Encoder Representations from Transformers is one of the extensively used hugging face model. Since this language model is bidirectionally trained, it can have a deeper sense of language context and flow than single-direction. BERT is designed to help computers understand the meaning of ambiguous language in text by using surrounding text to establish context. language models. 
 <div align= "center">
 
 <p align="center" style= "margin-top: 50px;">
-![Generating Sentence Embeddings Using BERT*](img/bert.png){width=80%}
+![](img/bert.png){width=80%}
 
-Similarity of GAT doc to ADP<br>
+Generating Sentence Embeddings Using BERT<br>
 </p>
 </div>
 
@@ -27,4 +30,4 @@ Similarity of GAT doc to ADP<br>
 3. <strong>Clustering:</strong> K-means clustering is important in document analysis because it allows us to group similar documents together based on their content. It can be used to automatically categorize large sets of documents into distinct groups, making it easier to manage and retrieve relevant information.
 
 ### Metric
-<strong>Cosine Similarity: </strong> It is used to measure the similarity between two documents based on their content. It calculates the cosine of the angle between two document vectors in a high-dimensional space, where each dimension represents a term (word) in the documents.
+<strong>Cosine Similarity: </strong> It is used to measure the similarity between two documents based on their content. It calculates the cosine of the angle between two document vectors in a high-dimensional space, where each dimension represents a term (word) in the documents. Hence this was used to determine similarity between GAT items and ADP. Cosine similarity 1 implies high conceptual similarity. 
