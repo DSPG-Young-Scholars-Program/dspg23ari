@@ -20,7 +20,8 @@ The below analysis is conducted to determine the similarity between the good per
 <div class="column">
 <p align="center" style= "margin-top: 50px;">
 ```{r echo = FALSE}
-read.csv("../../data/BERT Similarity.csv") %>% 
+data <- read.csv("../../data/BERT Similarity.csv") 
+data %>% 
   mutate(Character = stringr::str_remove(Character, "GAT"),
          Character = stringr::str_remove(Character, ".txt"),
          Character = stringr::str_replace_all(Character, "_", " ")) %>%
@@ -30,7 +31,7 @@ read.csv("../../data/BERT Similarity.csv") %>%
                      initComplete = JS(
     "function(settings, json) {",
     "$(this.api().table().header()).css({'width': '90%'});",
-    "}")), rownames = FALSE)
+    "}")), rownames = FALSE) 
 ```
 </p>
 </div>
@@ -39,7 +40,8 @@ read.csv("../../data/BERT Similarity.csv") %>%
 <div class="column">
 <p align="center" style= "margin-top: 50px;">
 ```{r echo = FALSE}
-read.csv("../../data/GP2 Similarity.csv") %>% 
+data <- read.csv("../../data/GP2 Similarity.csv") 
+data %>% 
   mutate(Character = stringr::str_remove(Character, "GAT"),
          Character = stringr::str_remove(Character, ".txt"),
          Character = stringr::str_replace_all(Character, "_", " ")) %>%
@@ -49,7 +51,7 @@ read.csv("../../data/GP2 Similarity.csv") %>%
                      initComplete = JS(
     "function(settings, json) {",
     "$(this.api().table().header()).css({'width': '90%'});",
-    "}")), rownames = FALSE)
+    "}")), rownames = FALSE) 
 ```
 </p>
 </div>
@@ -69,12 +71,11 @@ library(dplyr)
 library(DT)
 data <- read.csv("../../data/cosine_similarity_plot_data.csv") 
 
-data %>% filter(model == "BERT") %>% select(-X, -doc_one, -doc_two, -model) %>% 
-  mutate(cosine_similarity = round(cosine_similarity, 2),
-         avg_similarity = round(avg_similarity, 2)) %>%
-  select(value, cosine_similarity, avg_similarity, color) %>%
-  rename("Global Assessment Tool (GAT) Item" = value, "Cosine Similarity" = cosine_similarity, "Average Similarity" = avg_similarity) %>%
-  datatable(caption = 'Table 3. Cosine Similarity and Average Similarity for Psychosocial Survey items from the GAT using GPT-2.',
+data %>% filter(model == "BERT") %>% select(-X, -doc_one, -doc_two, -model, -avg_similarity) %>% 
+  mutate(cosine_similarity = round(cosine_similarity, 2)) %>%
+  select(value, cosine_similarity, color) %>%
+  rename("Global Assessment Tool (GAT) Item" = value, "Cosine Similarity" = cosine_similarity) %>%
+  datatable(caption = 'Table 3. Cosine Similarity between Psychosocial Survey items from the GAT and ADP 6-22 Army Leadership and the Profession Using BERT.',
         options = list(pageLength = 36, dom = 'tip',
                        columnDefs = list(list(visible=FALSE, targets=c("color"))),
                      initComplete = JS(
@@ -84,9 +85,7 @@ data %>% filter(model == "BERT") %>% select(-X, -doc_one, -doc_two, -model) %>%
   formatStyle("Global Assessment Tool (GAT) Item", 'color',
       color = styleEqual(c("red", "dark green"), c('red', 'green'))) %>%
   formatStyle("Cosine Similarity",
-    background = styleColorBar(data$cosine_similarity, 'steelblue')) %>%
-  formatStyle("Average Similarity",
-    background = styleColorBar(data$avg_similarity, 'steelblue'))
+    background = styleColorBar(data$cosine_similarity, 'steelblue')) 
 ```
 </p>
 </div>
@@ -99,12 +98,11 @@ library(dplyr)
 library(DT)
 data <- read.csv("../../data/cosine_similarity_plot_data.csv") 
 
-data %>% filter(model == "GPT-2") %>% select(-X, -doc_one, -doc_two, -model) %>% 
-  mutate(cosine_similarity = round(cosine_similarity, 2),
-         avg_similarity = round(avg_similarity, 2)) %>%
-  select(value, cosine_similarity, avg_similarity, color) %>%
-  rename("Global Assessment Tool (GAT) Item" = value, "Cosine Similarity" = cosine_similarity, "Average Similarity" = avg_similarity) %>%
-  datatable(caption = 'Table 4. Cosine Similarity and Average Similarity for Psychosocial Survey items from the GAT using GPT-2.',
+data %>% filter(model == "GPT-2") %>% select(-X, -doc_one, -doc_two, -model, -avg_similarity) %>% 
+  mutate(cosine_similarity = round(cosine_similarity, 2)) %>%
+  select(value, cosine_similarity, color) %>%
+  rename("Global Assessment Tool (GAT) Item" = value, "Cosine Similarity" = cosine_similarity) %>%
+  datatable(caption = 'Table 3. Cosine Similarity between Psychosocial Survey items from the GAT and ADP 6-22 Army Leadership and the Profession Using GPT-2',
         options = list(pageLength = 36, dom = 'tip',
                        columnDefs = list(list(visible=FALSE, targets=c("color"))),
                      initComplete = JS(
@@ -114,16 +112,35 @@ data %>% filter(model == "GPT-2") %>% select(-X, -doc_one, -doc_two, -model) %>%
   formatStyle("Global Assessment Tool (GAT) Item", 'color',
       color = styleEqual(c("red", "dark green"), c('red', 'green'))) %>%
   formatStyle("Cosine Similarity",
-    background = styleColorBar(data$cosine_similarity, 'steelblue')) %>%
-  formatStyle("Average Similarity",
-    background = styleColorBar(data$avg_similarity, 'steelblue'))
+    background = styleColorBar(data$cosine_similarity, 'steelblue'))
 ```
 </p>
 </div>
 </div>
 
-<br> Similarity of GAT doc to ADP
-</p>
+```{r echo = FALSE}
+library(tidyr)
+library(dplyr)
+library(DT)
+data <- read.csv("../../data/cosine_similarity_plot_data.csv") 
+
+data %>% filter(model == "GPT-2") %>% select(-X, -doc_one, -doc_two, -model, -cosine_similarity) %>% 
+  mutate(avg_similarity = round(avg_similarity, 2)) %>%
+  select(value, avg_similarity, color) %>%
+  rename("Global Assessment Tool (GAT) Item" = value, "Average Similarity" = avg_similarity) %>%
+  datatable(caption = 'Table 3. Average Similarity between Psychosocial Survey items from the GAT and ADP 6-22 Army Leadership and the Profession Using BERT and GPT-2',
+        options = list(pageLength = 36, dom = 'tip',
+                       columnDefs = list(list(visible=FALSE, targets=c("color"))),
+                     initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'width': '90%'});",
+    "}")), rownames = FALSE) %>% 
+  formatStyle("Global Assessment Tool (GAT) Item", 'color',
+      color = styleEqual(c("red", "dark green"), c('red', 'green'))) %>%
+  formatStyle("Average Similarity",
+    background = styleColorBar(data$avg_similarity, 'steelblue'))
+```
+
 </div>
 <br>
 <br>
