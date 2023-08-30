@@ -3,20 +3,10 @@ title: "Analyzing Data From Documents"
 subtitle: "Goals"
 ---
 
-# Project Summary
-This project aims to explore the prescriptive and descriptive behaviors associated with Soldier and unit performance, as well as related concepts like cohesion, teamwork, and leadership. Additionally, the research will focus on understanding the broad connection between performance and psychosocial characteristics.
-
-The ARI Team will leverage the project's results to gain deeper insights into the connection between performance behaviors and psychosocial traits. This understanding will enable more informed decision-making regarding key developmental positions and broadening assignments within the military. Moreover, the findings will be disseminated through open-source channels, contributing to the advancement of research in this domain and benefiting the wider scientific community.
-<br>
-
-
-# Project Goals
-1. Identify prescriptive and descriptive behaviors linked to Soldier and unit performance, cohesion, teamwork, and leadership.
-2. Investigate the correlations between psychosocial traits and Soldier performance.
-3. Compare the output of modeling strategies to identify areas of convergence and divergence in identifying performance-related behaviors and their connections to psychosocial traits.
+#### The goals of this part of the project was to explore the broad connection between performance and psychosocial characteristics, as well as behaviors associated with performance. The Social and Decision Analytics Division (SDAD) will leverage the project's exploration to gain deeper insights into the connection between performance behaviors and psychosocial traits and build models of Soldier performance.
 
 <br>
-<br>
-<br>
+
+#### To achieve these goals, we analyzed a variety of Army texts, including survey items and Army Doctrine. Learn more on our <a href=Data_Pt2.html>data source</a> page.
 
 

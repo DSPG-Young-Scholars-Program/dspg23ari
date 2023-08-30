@@ -3,11 +3,11 @@ title: "Extracting Text From Documents"
 subtitle: "Goals"
 ---
 
-#### The goal of the first part of the project was to use Army documents to create a dataset of officer assignments that could assist the Social and Decision Analytics (SDAD) and other Army analysts in modeling soldier career progression. 
+#### The goal of the first part of the project was to use Army documents to create a dataset of officer assignments that could assist the Social and Decision Analytics Division (SDAD) and other Army analysts in modeling soldier career progression. 
 
 <br>
 
-- **Assigments** are jobs, or positions, a soldier can hold in their branch of the Army.
+- **Assignments** are jobs, or positions, a soldier can hold in their branch of the Army.
 - Assignments occur with a **Rank**, such as "Captain" or "Colonel." 
 - Assignments are also categorized as either **Key Developmental** or **Developmental/Broadening** 
     - "Key Developmental" assignments are the most important assignments for an officer to complete in order to advance in rank. 
@@ -17,7 +17,7 @@ A sample instance of the desired output from this portion of the project might l
 
 <br>
 <div align="left">
-*Desired Ouput Format of Data From Army Documents*
+*Desired Output Format of Data From Army Documents*
 </div>
 <div align="center">
 ![](img/SampleOutput.png) 

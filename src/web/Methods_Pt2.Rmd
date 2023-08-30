@@ -22,7 +22,6 @@ To perform document similarity between the GAT items and ADP we have harnessed t
 
 Generating Sentence Embeddings Using BERT<br>
 </p>
-</div>
 
 2. <strong>GPT2:</strong> It is a transformer based language model designed to understand and generate human-like text by predicting the likelihood of words or sentences given the context provided to it. GPT-2 can perform various language-related tasks, such as generating coherent text, answering questions, completing sentences, and more. Its ability to generate contextually relevant responses has made it a powerful tool for natural language processing applications.
 

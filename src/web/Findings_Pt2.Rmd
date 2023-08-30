@@ -2,22 +2,55 @@
 title: "Analyzing Data From Documents"
 subtitle: "Findings"
 ---
+
+```{r include = FALSE}
+library(DT)
+library(tidyr)
+library(dplyr)
+
+colfunc <- colorRampPalette(c("white", "orange"))
+```
+
+## *Performance and Psychosocial Characteristics*
+
 Army Doctrine Publication serves as the baseline document. 
 The below analysis is conducted to determine the similarity between the good performer and bad performer GAT items. Most of the documents have a cosine similarity greater than 0.9 indicating high similarity. Since most of the words are common in the good performer and bad performer documents high similarity is observed.
 
 <div>
 <div class="column">
 <p align="center" style= "margin-top: 50px;">
-![Similarity Analysis using BERT](img/part2-bert.png){width=90%}
-*Similarity Analysis using BERT*
+```{r echo = FALSE}
+read.csv("../../data/BERT Similarity.csv") %>% 
+  mutate(Character = stringr::str_remove(Character, "GAT"),
+         Character = stringr::str_remove(Character, ".txt"),
+         Character = stringr::str_replace_all(Character, "_", " ")) %>%
+  rename("Global Assessment Tool (GAT) Item" = Character, "Cosine Similarity" = Cosine.Similarity, "Average Similarity" = Average.Similarity) %>%
+  datatable(caption = 'Table 1. Cosine Similarity and Average Similarity for Psychosocial Survey items from the GAT using BERT.',
+    options = list(pageLength = 18, dom = 'tip',
+                     initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'width': '90%'});",
+    "}")), rownames = FALSE)
+```
 </p>
 </div>
 
 
 <div class="column">
 <p align="center" style= "margin-top: 50px;">
-![Similarity Analysis using GPT](img/part2-gpt.png){width=90%} 
-*Similarity Analysis using GPT*
+```{r echo = FALSE}
+read.csv("../../data/GP2 Similarity.csv") %>% 
+  mutate(Character = stringr::str_remove(Character, "GAT"),
+         Character = stringr::str_remove(Character, ".txt"),
+         Character = stringr::str_replace_all(Character, "_", " ")) %>%
+  rename("Global Assessment Tool (GAT) Item" = Character, "Cosine Similarity" = Cosine.Similarity, "Average Similarity" = Average.Similarity) %>%
+  datatable(caption = 'Table 2. Cosine Similarity and Average Similarity for Psychosocial Survey items from the GAT using GPT-2.',
+        options = list(pageLength = 18, dom = 'tip',
+                     initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'width': '90%'});",
+    "}")), rownames = FALSE)
+```
 </p>
 </div>
 </div>
@@ -27,8 +60,68 @@ The below analysis is conducted to determine the similarity between the GAT item
 </div>
 <div align= "center">
 
+<div>
+<div class="column">
 <p align="center" style= "margin-top: 50px;">
-![Similarity of GAT item*](img/part2-cosine.png){width=80%}
+```{r echo = FALSE}
+library(tidyr)
+library(dplyr)
+library(DT)
+data <- read.csv("../../data/cosine_similarity_plot_data.csv") 
+
+data %>% filter(model == "BERT") %>% select(-X, -doc_one, -doc_two, -model) %>% 
+  mutate(cosine_similarity = round(cosine_similarity, 2),
+         avg_similarity = round(avg_similarity, 2)) %>%
+  select(value, cosine_similarity, avg_similarity, color) %>%
+  rename("Global Assessment Tool (GAT) Item" = value, "Cosine Similarity" = cosine_similarity, "Average Similarity" = avg_similarity) %>%
+  datatable(caption = 'Table 3. Cosine Similarity and Average Similarity for Psychosocial Survey items from the GAT using GPT-2.',
+        options = list(pageLength = 36, dom = 'tip',
+                       columnDefs = list(list(visible=FALSE, targets=c("color"))),
+                     initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'width': '90%'});",
+    "}")), rownames = FALSE) %>% 
+  formatStyle("Global Assessment Tool (GAT) Item", 'color',
+      color = styleEqual(c("red", "dark green"), c('red', 'green'))) %>%
+  formatStyle("Cosine Similarity",
+    background = styleColorBar(data$cosine_similarity, 'steelblue')) %>%
+  formatStyle("Average Similarity",
+    background = styleColorBar(data$avg_similarity, 'steelblue'))
+```
+</p>
+</div>
+
+<div class="column">
+<p align="center" style= "margin-top: 50px;">
+```{r echo = FALSE}
+library(tidyr)
+library(dplyr)
+library(DT)
+data <- read.csv("../../data/cosine_similarity_plot_data.csv") 
+
+data %>% filter(model == "GPT-2") %>% select(-X, -doc_one, -doc_two, -model) %>% 
+  mutate(cosine_similarity = round(cosine_similarity, 2),
+         avg_similarity = round(avg_similarity, 2)) %>%
+  select(value, cosine_similarity, avg_similarity, color) %>%
+  rename("Global Assessment Tool (GAT) Item" = value, "Cosine Similarity" = cosine_similarity, "Average Similarity" = avg_similarity) %>%
+  datatable(caption = 'Table 4. Cosine Similarity and Average Similarity for Psychosocial Survey items from the GAT using GPT-2.',
+        options = list(pageLength = 36, dom = 'tip',
+                       columnDefs = list(list(visible=FALSE, targets=c("color"))),
+                     initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'width': '90%'});",
+    "}")), rownames = FALSE) %>% 
+  formatStyle("Global Assessment Tool (GAT) Item", 'color',
+      color = styleEqual(c("red", "dark green"), c('red', 'green'))) %>%
+  formatStyle("Cosine Similarity",
+    background = styleColorBar(data$cosine_similarity, 'steelblue')) %>%
+  formatStyle("Average Similarity",
+    background = styleColorBar(data$avg_similarity, 'steelblue'))
+```
+</p>
+</div>
+</div>
+
 <br> Similarity of GAT doc to ADP
 </p>
 </div>
@@ -38,17 +131,12 @@ The below analysis is conducted to determine the similarity between the GAT item
 The below analysis is conducted to explore the prescriptive and descriptive behaviors associated with Soldier and unit performance.
 <br>
 <br>
-</div>
 
 <div style="clear: both">
 
-## *Verb Extraction and Analysis*
+## *Exploring Performance Behaviors*
 
 ```{r echo = FALSE}
-library(DT)
-library(tidyr)
-library(dplyr)
-
 read.csv("../../data/verbs.csv") %>% 
   rename("Verb" = lemma, "Count" = count) %>%
   datatable(caption = 'Table 2. The most frequently occuring verbs in the Joint Universal Task List.',
